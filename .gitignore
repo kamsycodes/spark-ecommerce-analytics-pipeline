@@ -1,0 +1,62 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ==========================================
+# Data
+# ==========================================
+
+# Raw source datasets
+data/raw/*
+
+# Generated Spark datasets
+data/bronze/*
+data/silver/*
+data/gold/*
+data/benchmark/*
+
+# Keep directory structure in Git
+!data/raw/.gitkeep
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!data/benchmark/.gitkeep
+
+# Spark / Parquet
+*.parquet
+_SUCCESS
+.sparkStaging/
+
+# ==========================================
+# Jupyter
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# macOS
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==========================================
+# IDE / Editors
+# ==========================================
+.vscode/
+.idea/
+
+# ==========================================
+# Logs / temporary files
+# ==========================================
+*.log
+*.tmp
+*.temp
